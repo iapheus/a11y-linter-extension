@@ -1,0 +1,28 @@
+{
+  "name": "a11y-linter",
+  "displayName": "Accessibility Linter",
+  "description": "Automatically detects accessibility issues in files containing HTML tags.",
+  "icon": "images/icon.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onCommand:a11yLinter.analyze"
+  ],
+  "main": "src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "a11yLinter.analyze",
+        "title": "Run Accessibility Analysis"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:package": "vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}
