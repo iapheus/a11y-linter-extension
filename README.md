@@ -22,9 +22,9 @@ A lightweight linter that detects accessibility issues in your UI code in real t
 
 | Feature / Task                                               | Status         |
 |--------------------------------------------------------------|----------------|
-| Config file for enabling/disabling specific rules            | In progress    |
+| Config file for enabling/disabling specific rules            | Completed ✅   |
+| Multi-language support for error description                 | In Progress 	 |
 | Context-aware autofix suggestions                            | ❌ Not started |
-| Multi-language support for error description                 | ❌ Not started |
 ---
 
 ## Screenshots
