@@ -52,7 +52,26 @@ function activate(context) {
     }
   });
 
-  context.subscriptions.push(command, diagnosticCollection, changeListener);
+  const changeSettingsListener = vscode.workspace.onDidChangeConfiguration(event => {
+    if (
+      event.affectsConfiguration('a11yLinter.warnOnImgIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnAnchorIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnButtonIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnInputIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnSelectIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnIframeIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnFormIssues') ||
+      event.affectsConfiguration('a11yLinter.warnOnTableIssues') || 
+      event.affectsConfiguration('a11yLinter.warnOnMainIssues')
+    ) {
+      const activeDoc = vscode.window.activeTextEditor?.document;
+      if (activeDoc) {
+        analyzeDocument(activeDoc);
+      }
+    }
+  });
+
+  context.subscriptions.push(command, diagnosticCollection, changeListener, changeSettingsListener);
 }
 
 module.exports = { activate };

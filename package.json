@@ -17,7 +17,57 @@
         "command": "a11yLinter.analyze",
         "title": "Run Accessibility Analysis"
       }
-    ]
+    ],
+"configuration": {
+    "title": "A11yLinter Settings",
+    "properties": {
+      "a11yLinter.warnOnImgIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <img> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnAnchorIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <a> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnButtonIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <button> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnInputIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <input> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnSelectIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <select> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnIframeIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <iframe> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnFormIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <form> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnTableIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <table> tags have accessibility issues."
+      },
+      "a11yLinter.warnOnMainIssues": {
+        "type": "boolean",
+        "default": true,
+        "description": "Warn when <main> tags have accessibility issues."
+      }
+    }
+  }
   },
   "scripts": {
     "vscode:package": "vsce package"
