@@ -2,12 +2,13 @@
 # A11yLinter — Accessibility Linter for VS Code
 
 A lightweight linter that detects accessibility issues in your UI code in real time, provides clear warnings, and suggests improvements.
+- Uses OpenAI gpt-oss-20b model for autofix feature. You can learn more here: [Huggingface](https://huggingface.co/openai/gpt-oss-20b) and [OpenRouter](https://openrouter.ai/openai/gpt-oss-20b:free)
 
 ## Installation
 
 -  Not yet available on the VS Code Marketplace.
 -   To install manually:
-	 1.  Download the `.vsix`  file from the [Releases](https://github.com/iapheus/a11y-linter-extension/releases/tag/v1.0.0) section of this repository.
+	 1.  Download the latest `.vsix`  file from the [Releases](https://github.com/iapheus/a11y-linter-extension/releases) section of this repository.
 	 2.  In VS Code, go to `Extensions → … → Install from VSIX`.
 
 ## Usage
@@ -23,8 +24,8 @@ A lightweight linter that detects accessibility issues in your UI code in real t
 | Feature / Task                                               | Status         |
 |--------------------------------------------------------------|----------------|
 | Config file for enabling/disabling specific rules            | Completed ✅   |
+| Context-aware autofix suggestions                            | Completed ✅	 |
 | Multi-language support for error description                 | In Progress 	 |
-| Context-aware autofix suggestions                            | ❌ Not started |
 ---
 
 ## Screenshots
@@ -32,7 +33,9 @@ A lightweight linter that detects accessibility issues in your UI code in real t
 <p align="center">
   <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/codeWarning.png" width="400" height="500" alt="Accessibility error warning" style="display:inline-block;"/>
   <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/description.png" width="400" height="500" alt="Accessibility error description" style="display:inline-block;"/>
-  <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/aLotOfIssue.png" alt="Number of issues" style="display:inline-block;"/>
+  <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/quickFix.png" alt="No issue" style="display:inline-block;"/>
+  <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/doYouApprove.png" alt="No issue" style="display:inline-block;"/>
+	  <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/aLotOfIssue.png" alt="Number of issues" style="display:inline-block;"/>
   <img src="https://raw.githubusercontent.com/iapheus/a11y-linter-extension/refs/heads/main/images/noIssue.png" alt="No issue" style="display:inline-block;"/>
 </p>
 
