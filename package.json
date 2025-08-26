@@ -3,7 +3,7 @@
   "displayName": "Accessibility Linter",
   "description": "Automatically detects accessibility issues in files containing HTML tags.",
   "icon": "images/icon.png",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -21,6 +21,10 @@
 "configuration": {
     "title": "A11yLinter Settings",
     "properties": {
+      "a11yLinter.openRouterToken": {
+        "type": "string",
+        "description": "Enter your OpenAI: gpt-oss-20b token on OpenRouter."
+      },
       "a11yLinter.warnOnImgIssues": {
         "type": "boolean",
         "default": true,
